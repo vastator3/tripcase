@@ -114,7 +114,7 @@ async function main() {
 
 
   const calendar = await createEventsAsync(events);
-  await writeFileAsync(('./flights.ics'), calendar);
+  await writeFileAsync(('./export/flights.ics'), calendar);
   console.log('flights.ics file has been created successfully');
 
 }
