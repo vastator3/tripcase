@@ -3,9 +3,12 @@
 
 # @lzilioli Changes 2025:
 
+[TripCase is retiring](https://www.reddit.com/r/travel/comments/1imzlga/tripcase_retiring/). We need a better way to export.
+
 Heavily modified fork of https://github.com/madmod/tripcase
 
-You can export your flights to an .ics file with the following steps:
+You can export your flights to an .ics file with the following steps. You can then
+import this to iCalendar or TripIt.
 
 I tested with nodejs version 20. I recommend you use nvm. [Install instructions](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script).
 
