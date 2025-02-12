@@ -7,8 +7,13 @@
 
 Heavily modified fork of https://github.com/madmod/tripcase
 
-You can export your flights to an .ics file with the following steps. You can then
-import this to iCalendar or TripIt.
+You can export your flights to an .ics file with the following steps.
+You can then import this to iCalendar.
+
+It also exports all trip info to export/all-trips.json, which you could further process
+using AI (or have AI enhance the script, or write a new script) to firther map the data.
+Open an issue in the repo and I can see if we can make a more helpful format.
+At least what is here allows you to stuff your data somewhere for now.
 
 I tested with nodejs version 20. I recommend you use nvm. [Install instructions](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script).
 
