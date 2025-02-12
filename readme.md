@@ -11,7 +11,7 @@ You can export your flights to an .ics file with the following steps.
 You can then import this to iCalendar.
 
 It also exports all trip info to export/all-trips.json, which you could further process
-using AI (or have AI enhance the script, or write a new script) to firther map the data.
+using AI (or have AI enhance the script, or write a new script) to further map the data.
 Open an issue in the repo and I can see if we can make a more helpful format.
 At least what is here allows you to stuff your data somewhere for now.
 
