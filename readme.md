@@ -19,7 +19,7 @@ git clone https://github.com/lzilioli/tripcase.git
 cd tripcase
 nvm install # install node 20 (specified in the .nvmrc)
 nvm use # switch to version 20 (specified in the .nvmrc)
-npm install # tested with node 20
+npm install
 # creates file at export/flights.ics and export/flight-info.json
 npm run flights <username> <password>
 # creates file at export/all-trips.json
