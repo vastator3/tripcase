@@ -6,45 +6,25 @@
 //
 
 'use strict';
+const meow = require('meow');
+const tripcase = require('./');
+const { fetchAllData } = require('./helpers');
 
-var debug = require('debug')('tripcase-cli');
-
-var meow = require('meow');
-
-var tripcase = require('./');
-
-
-// TODO: Replace demo code with useful command line options
-
-var cli = meow({
+const cli = meow({
   help: [
     'Usage',
     '  $ tripcase email password'
   ]
 });
 
-
-var api = new tripcase({
+const api = new tripcase({
   email: cli.input[0],
   password: cli.input[1]
 });
 
+async function main() {
+  const allData = await fetchAllData(api);
+  console.log(JSON.stringify(allData, null, 2))
+}
 
-api.login(function (err, res, body) {
-  if (err) throw err;
-
-  console.log(body);
-
-  api.getTrips(function (err, res, trips) {
-    if (err) throw err;
-
-    console.log('trips', trips);
-
-    api.getTripDetails(trips[0].id, function (err, res, tripDetails) {
-      if (err) throw err;
-
-      console.log('details', tripDetails);
-    });
-  });
-});
-
+main();

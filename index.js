@@ -60,9 +60,15 @@ TripCase.prototype.login = function login (callback) {
 
 
 // Get upcoming TripCase trips
-TripCase.prototype.getTrips = function getTrips (callback) {
+TripCase.prototype.getTrips = function getTrips (active, following, callback) {
+  if (following) {
+    return api(
+      `/trips/following.json?active=${active || false}`,
+      callback
+    );
+  }
   return api(
-    '/trips.json?active=true',
+    `/trips.json?active=${active || false}`,
     callback
   );
 };

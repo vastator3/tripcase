@@ -4,3 +4,7 @@ npm-debug.log
 .DS_Store
 
 ref
+
+*trips*.json
+flight*.json
+flight*.ics

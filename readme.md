@@ -1,5 +1,13 @@
 # tripcase [![Build Status](https://travis-ci.org/madmod/tripcase.svg?branch=master)](https://travis-ci.org/madmod/tripcase)
 
+Heavily modified fork of https://github.com/madmod/tripcase
+
+**Changes:**
+
+- Update the CLI command to perform a FULL export of ALL
+
+---
+
 An unofficial TripCase API client.
 
 This uses the internal TripCase mobile API which may change without notice.
