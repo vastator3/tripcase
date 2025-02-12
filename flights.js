@@ -45,7 +45,7 @@ function parseDateTime(dateTimeString) {
 async function main() {
   // const allData = require('./all-trips.json');
   const allData = await fetchAllData(api);
-  await writeFileAsync('./all-trips.json', JSON.stringify(allData, null, 2));
+  await writeFileAsync('./export/all-trips.json', JSON.stringify(allData, null, 2));
   debug('identifying flights...')
   const tripsWithFlights = allData.trips.filter((trip) =>{
     debug('checking for fligts in', trip.name)
@@ -65,7 +65,7 @@ async function main() {
   .flatten()
   .value();
 
-  await writeFileAsync('./trips-with-flights.json', JSON.stringify(tripsWithFlights, null, 2));
+  await writeFileAsync('./export/trips-with-flights.json', JSON.stringify(tripsWithFlights, null, 2));
 
   const allFlightDetails = _.chain(tripsIncludingFlights)
   .map((trip) => {
