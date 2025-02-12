@@ -22,7 +22,7 @@ const createEventsAsync = util.promisify(ics.createEvents);
 const cli = meow({
   help: [
     'Usage',
-    '  $ tripcase email password'
+    '  $ npm run flights email password'
   ]
 });
 
@@ -92,7 +92,7 @@ async function main() {
   .flatten()
   .value();
 
-  await writeFileAsync('./flight-info.json', JSON.stringify(allFlightDetails, null, 2))
+  await writeFileAsync('./export/flight-info.json', JSON.stringify(allFlightDetails, null, 2))
 
   const events = allFlightDetails.map(flight => {
     const { startTime, endTime, name, airline, code, number, fromCity, toCity, fromAirport, toAirport } = flight;

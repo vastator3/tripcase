@@ -16,8 +16,8 @@
   },
   "scripts": {
     "start": "node cli.js",
-    "fetch-all-trips": "node cli.js > all-trips.json",
-    "flights": "node flights.js",
+    "fetch-all-trips": "mkdir -p export && node cli.js > export/all-trips.json",
+    "flights": "mkdir -p export && node flights.js",
     "test": "mocha --reporter nyan tests"
   },
   "files": [

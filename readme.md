@@ -1,12 +1,17 @@
 # tripcase [![Build Status](https://travis-ci.org/madmod/tripcase.svg?branch=master)](https://travis-ci.org/madmod/tripcase)
 
+
+**@lzilioli Changes 2025:**
+
 Heavily modified fork of https://github.com/madmod/tripcase
 
-**Changes:**
-
-- Update the CLI command to perform a FULL export of ALL flights.
+You can export your flights to an .ics file with the following steps:
 
 ```
+git clone https://github.com/lzilioli/tripcase.git
+cd tripcase
+nvm install
+nvm use
 npm install
 npm run flights <username> <password>
 # creates file all-trips.json
