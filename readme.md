@@ -32,6 +32,8 @@ npm run flights <username> <password>
 
 ---
 
+# Former README:
+
 An unofficial TripCase API client.
 
 This uses the internal TripCase mobile API which may change without notice.
