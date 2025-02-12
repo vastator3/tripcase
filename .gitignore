@@ -8,3 +8,4 @@ ref
 *trips*.json
 flight*.json
 flight*.ics
+*.ignore

@@ -4,7 +4,14 @@ Heavily modified fork of https://github.com/madmod/tripcase
 
 **Changes:**
 
-- Update the CLI command to perform a FULL export of ALL
+- Update the CLI command to perform a FULL export of ALL flights.
+
+```
+npm install
+npm run flights <username> <password>
+# creates file all-trips.json
+npm run fetch-all-trips <username> <password>
+```
 
 ---
 
