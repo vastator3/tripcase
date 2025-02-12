@@ -1,18 +1,22 @@
 # tripcase [![Build Status](https://travis-ci.org/madmod/tripcase.svg?branch=master)](https://travis-ci.org/madmod/tripcase)
 
 
-**@lzilioli Changes 2025:**
+# @lzilioli Changes 2025:
 
 Heavily modified fork of https://github.com/madmod/tripcase
 
 You can export your flights to an .ics file with the following steps:
 
+I tested with nodejs version 20. I recommend you use nvm. [Install instructions](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script).
+
+Once you have nvm:
+
 ```
 git clone https://github.com/lzilioli/tripcase.git
 cd tripcase
-nvm install
-nvm use
-npm install
+nvm install # install node 20 (specified in the .nvmrc)
+nvm use # switch to version 20 (specified in the .nvmrc)
+npm install # tested with node 20
 npm run flights <username> <password>
 # creates file all-trips.json
 npm run fetch-all-trips <username> <password>
