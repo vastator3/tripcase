@@ -28,15 +28,14 @@
     "tripcase"
   ],
   "dependencies": {
+    "axios": "^1.0.0",
     "dayjs": "1.11.10",
     "debug": "^2.2.0",
     "ics": "3.7.2",
     "lodash": "4.17.21",
-    "meow": "^3.3.0",
     "node-uuid": "^1.4.3",
-    "request": "^2.60.0",
-    "tough-cookie": "^2.0.0",
-    "unirest": "^0.4.2"
+    "tough-cookie": "^5.1.1",
+    "yargs": "^17.0.0"
   },
   "devDependencies": {
     "mocha": "*"
